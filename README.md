@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">
     <a href="https://openairinterface.org/"><img src="https://openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png" alt="OAI" width="550"></a>
 </h1>
@@ -108,3 +109,5 @@ architecture, coding/implementation.
 
 They are available on the [CHANGELOG](CHANGELOG.md) file.
 
+=======
+>>>>>>> f027511 (update readme)
