@@ -10,3 +10,10 @@ sudo docker build --tag oai-udr:v2.0.1 --file docker/Dockerfile.udr.ubuntu --bui
 sudo docker build --tag oai-udm:v2.0.1 --file docker/Dockerfile.udm.ubuntu --build-arg BASE_IMAGE=ubuntu:jammy .
 
 sudo docker build --tag oai-ausf:v2.0.1 --file docker/Dockerfile.ausf.ubuntu --build-arg BASE_IMAGE=ubuntu:jammy .
+
+
+# tag deployed image and push to dockerhub
+
+sudo docker login
+sudo docker tag oai-amf:v2.0.1 henok28/oai-amf:v2.0.1
+sudo docker push henok28/oai-amf:v2.0.1
