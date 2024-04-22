@@ -3,13 +3,13 @@ kubernetesType: Vanilla  #Vanilla for community kubernetes distribution else Ope
 ## In case of using these charts on Openshift then please use UBI images
 ## To know more about them follow this tutorial https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-fed/-/tree/master/openshift
 nfimage:
-  repository: docker.io/oaisoftwarealliance/oai-udr # image name either locally present or in a public/private repository
+  repository: docker.io/henok28/oai-udr #docker.io/oaisoftwarealliance/oai-udr # image name either locally present or in a public/private repository
   version: v2.0.1 #image tag, develop tag for experimental features 
   #pullPolicy: IfNotPresent or Never or Always
-  pullPolicy: IfNotPresent
+  #pullPolicy: IfNotPresent
 
-imagePullSecrets: 
-  - name: "regcred"
+#imagePullSecrets: 
+  #- name: "regcred"
 
 serviceAccount:
   # Specifies whether a service account should be created
