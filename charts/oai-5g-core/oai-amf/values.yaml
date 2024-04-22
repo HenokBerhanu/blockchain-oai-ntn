@@ -41,7 +41,7 @@ multus:
   defaultGateway: "" #"10.244.1.203" #"172.21.7.254" 172.21.7.254
   n2Interface:
     create: true #false
-    Ipadd: "172.21.6.94" #"10.244.1.203" #"172.21.6.94"
+    Ipadd: "10.244.1.203" #"10.244.1.203" #"172.21.6.94"
     Netmask: "24" #"22"
     ## If you do not have a gateway leave the field empty
     Gateway: "" #10.244.1.1
