@@ -16,7 +16,7 @@ oai-nrf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/oaisoftwarealliance/oai-nrf           ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-nrf #docker.io/oaisoftwarealliance/oai-nrf           ## The image will be pulled from dockerhub
     version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
