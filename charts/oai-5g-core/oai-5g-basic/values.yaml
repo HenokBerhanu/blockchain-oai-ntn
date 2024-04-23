@@ -3,7 +3,7 @@ global:
   clusterIpServiceIpAllocation: true #this will allocate ip-address to cluster Ip service
   waitForNRF: true
   http2Param: "--http2-prior-knowledge"  # if waitForNRF is true and http2 is used for all NF then this param is needed
-  timeout: 10
+  timeout: 1
 mysql:
   enabled: true
   imagePullPolicy: IfNotPresent
@@ -16,7 +16,7 @@ oai-nrf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-nrf          ## The image will be pulled from dockerhub
+    repository: docker.io/oaisoftwarealliance/oai-nrf #docker.io/henok28/oai-nrf          ## The image will be pulled from dockerhub
     version: v2.0.1                          ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
