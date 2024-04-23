@@ -16,7 +16,7 @@ oai-nrf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-nrf #docker.io/oaisoftwarealliance/oai-nrf          ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-nrf          ## The image will be pulled from dockerhub
     version: v2.0.1                          ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
@@ -30,7 +30,7 @@ oai-udr:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-udr #docker.io/oaisoftwarealliance/oai-udr           ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-udr          ## The image will be pulled from dockerhub
     version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
@@ -44,7 +44,7 @@ oai-udm:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-udm #docker.io/oaisoftwarealliance/oai-udm           ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-udm           ## The image will be pulled from dockerhub
     version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
@@ -58,7 +58,7 @@ oai-ausf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-ausf #docker.io/oaisoftwarealliance/oai-ausf           ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-ausf           ## The image will be pulled from dockerhub
     version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
@@ -73,7 +73,7 @@ oai-amf:
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
     repository: docker.io/henok28/oai-amf           ## The image will be pulled from dockerhub
-    version: v2.0.1                                   ## The branch to be used to pull from dockerhub
+    version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
   includeTcpDumpContainer: false #only for taking pcaps inside network function pod
@@ -98,8 +98,8 @@ oai-upf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-upf #docker.io/oaisoftwarealliance/oai-upf    ## The image will be pulled from dockerhub
-    version: v2.0.1 #v1.1.0                                    ## The branch to be used to pull from dockerhub
+    repository: docker.io/henok28/oai-upf    ## The image will be pulled from dockerhub
+    version: v2.0.1                                    ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
   includeTcpDumpContainer: false #only for taking pcaps inside network function pod
@@ -171,7 +171,7 @@ oai-smf:
   enabled: true
   kubernetesType: Vanilla #Openshift/Vanilla Vanilla for Upstream Kubernetes
   nfimage:  # image name either locally present or in a public/private repository
-    repository: docker.io/henok28/oai-smf #docker.io/oaisoftwarealliance/oai-smf           ## The image will be pulled from dockerhub
+    repository: docker.io/henok28/oai-smf           ## The image will be pulled from dockerhub
     version: v2.0.1                         ## The branch to be used to pull from dockerhub
     # pullPolicy: IfNotPresent or Never or Always
     pullPolicy: IfNotPresent
