@@ -83,7 +83,7 @@ oai-amf:
     ## If you don't want to add a default route in your pod then replace this field with ""
     defaultGateway: "10.244.1.203"
     n2Interface:
-      create: true #false
+      create: false #false
       Ipadd: "10.244.1.203" #"172.21.6.94"
       Netmask: "24" #"22"
       # #name inside the pod is hardcoded right now
