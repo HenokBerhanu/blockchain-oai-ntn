@@ -6,7 +6,7 @@ global:
   timeout: 1
 mysql:
   enabled: true
-  imagePullPolicy: IfNotPresent
+  #imagePullPolicy: IfNotPresent
   oai5gdatabase: basic
   #imagePullSecrets:
     #- name: "regcred"
