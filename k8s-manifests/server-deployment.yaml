@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yaml -o k8s-manifests/
+    kompose.version: 1.33.0 (3ce457399)
+  labels:
+    io.kompose.service: server
+  name: server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: server
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yaml -o k8s-manifests/
+        kompose.version: 1.33.0 (3ce457399)
+      labels:
+        io.kompose.network/container-gw: "true"
+        io.kompose.service: server
+    spec:
+      containers:
+        - image: client
+          name: server
+          securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+          tty: true
+      restartPolicy: Always
